@@ -1,0 +1,5 @@
+#import User from './user.graphql'
+
+type Like {
+    author:User
+}

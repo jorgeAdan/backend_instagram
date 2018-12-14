@@ -1,0 +1,32 @@
+type User {
+    name:String!
+    user_name:String
+    email:String!
+    password:String!
+    gender:Gender
+    image_url:String
+    bio:String
+    is_active:Boolean
+}
+
+input UserInput {
+    name:String!
+    user_name:String
+    email:String!
+    password:String!
+    gender:Gender
+    image_url:String
+    bio:String
+}
+
+
+
+enum Gender {
+    Male
+    Female
+
+}
+
+type AuthToken {
+    token:String
+}

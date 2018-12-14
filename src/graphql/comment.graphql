@@ -1,0 +1,10 @@
+#import User from './user.graphql'
+
+type Comment {
+    author:User
+    content:String
+}
+
+input CommentInput {
+    content:String!
+}

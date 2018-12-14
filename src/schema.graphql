@@ -1,0 +1,17 @@
+#import UserInput from './graphql/user.graphql'
+#import Post,PostInput from './graphql/post.graphql'
+#import Comment,CommentInput from './graphql/comment.graphql'
+#import Like,LikeInput from './graphql/like.graphql'
+
+type Query {
+    prueba:String
+}
+ 
+type Mutation{
+    signup(data:UserInput!):AuthToken
+    login(email:String!,password:String!):AuthToken
+    addPost(data:PostInput!):Post
+    addComment(id:String,data:CommentInput!):Post
+    addLike(id:String):Post
+}
+

@@ -1,0 +1,18 @@
+//USER
+mutation createUser {
+    signup(data:{
+        name:"Ramon",
+        user_name:"Ramonqui",
+        email:"test5@test.com",
+        password:"test123"
+    }){
+        token
+    }
+}
+mutation login {
+  login(
+    email:"test@test.com"
+    password:"test123"
+  )
+  {token}
+}
