@@ -5,6 +5,7 @@
 
 type Query {
     prueba:String
+    posts:[Post!]!
 }
  
 type Mutation{

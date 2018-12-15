@@ -2,6 +2,7 @@
 #import Comment from './comment.graphql'
 
 type Post {
+    _id:ID
     createdBy:User
     description:String
     image_url:String

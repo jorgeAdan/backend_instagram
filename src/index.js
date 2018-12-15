@@ -8,7 +8,7 @@ const typeDefs = './src/schema.graphql'
 
 
 //Connect to MongoDB
-mongoose.connect('mongodb://prueba123:prueba123@ds157469.mlab.com:57469/instagram_cintanegra',{ useNewUrlParser: true } )
+mongoose.connect('mongodb://prueba:prueba123@cluster0-shard-00-00-yvw7z.mongodb.net:27017,cluster0-shard-00-01-yvw7z.mongodb.net:27017,cluster0-shard-00-02-yvw7z.mongodb.net:27017/test?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin&retryWrites=true',{ useNewUrlParser: true } )
 
 const db = mongoose.connection
 
